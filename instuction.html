@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>fight game </title>
+        <style>
+            body{
+                background-image: url('hello.jpg');
+                background-repeat: no-repeat;
+            }
+            .primary,.secondry{
+               
+                padding: 50px;
+               font-family: 'Times New Roman', Times, serif;
+               font-size: medium;
+
+            }
+            .primary{
+                position: absolute;
+                left: 10%;
+                top: 30%;
+                transform: translate(-10%,-30%);
+            
+            }
+            .secondry{
+                position: absolute;
+                right: 10%;
+                top: 30%;
+                transform: translate(0,-30%);
+            }
+            span{
+                
+                padding: 1px 3px;
+                background-color: black;
+                color: whitesmoke;
+                font-style: normal;
+            }
+            li{
+                letter-spacing: 2px;
+                font-style: italic;
+                font-weight: bold;
+                font-size: larger;
+               
+                
+            }
+            h1{
+                display: flex;
+                position:relative;
+                justify-content: center;
+            }
+            a{
+                position: absolute;
+                top: 85%;
+                left: 50%;
+                transform: translate(-50%,-85%);
+            }
+            .play{
+                position: relative;
+                width: 150px;
+                height: 40px;
+                background-color: transparent;
+                color: black;
+                font-weight: bolder;
+                font-size: large;
+            }
+            .play:hover{
+                background-color: black;
+                color: white;
+                font-weight: lighter;
+                font-size: medium;
+                font-style: italic;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="primary">
+            <h1 style="color: red;">Red Player</h1>
+            <hr>
+            <ul>
+                <li>press <span>D</span> to move right</li>
+                <br>
+                <br>
+                <li>press <span>A</span>  to move left</li>
+                <br>
+                <br>
+                <li>press <span>W</span>  to jump</li>
+                <br>
+                <br>
+                <li>press <span>Spacebar</span>  to attack</li>
+                <br>
+                <br>
+                <li>press <span>S</span>  for special attack</li>
+            </ul>
+        </div>
+        <div class="secondry">
+            <h1 style="color: blue;">Blue Player</h1>
+            <hr>
+            <ul>
+                <li>press <span>&#8594;</span>  to move right</li>
+                <br>
+                <br>
+                <li>press <span>&#8592;</span>  to move left</li>
+                <br>
+                <br>
+                <li>press <span>&#8593;</span>  to jump</li>
+                <br>
+                <br>
+                <li>press <span>&#8595;</span>  to attack</li>
+                <br>
+                <br>
+                <li>press <span>/</span>  for special attack</li>
+            </ul>
+        </div>
+        <a href="fightgame.html">
+            <button class="play">Play</button>
+        </a>
+        
+    </body>
+</html>
